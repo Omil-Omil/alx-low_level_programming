@@ -3,7 +3,7 @@
 /**
  * main - prints digit numbers of base ten starting from zero
  *
- * Return 0 (successful)
+ * Return: 0 (successful)
  */
 int main(void)
 {
