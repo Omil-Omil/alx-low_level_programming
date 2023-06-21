@@ -5,7 +5,7 @@
  *
  * @a: number whose absolute valueis to be found
  *
- * Return: Absolute value of the number
+ * Return: Absolute value of @a
  */
 int _abs(int a)
 {
