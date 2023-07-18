@@ -52,7 +52,7 @@ char *_strcpy(char *dest, char *src)
  *
  * Return: pointer to the new dog(success), if not NULL
  */
-dog_t *new_dog(char *name, float age, char *owner);
+dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *dog;
 	int len1, len2;
@@ -65,7 +65,7 @@ dog_t *new_dog(char *name, float age, char *owner);
 		return (NULL);
 
 	dog->name = malloc(sizeof(char) * (len1 + 1));
-	if (dog->nmae == NULL)
+	if (dog->name == NULL)
 	{
 		free(dog);
 		return (NULL);
@@ -74,7 +74,7 @@ dog_t *new_dog(char *name, float age, char *owner);
 	if (dog->owner == NULL)
 	{
 		free(dog);
-		free(dog->nmae);
+		free(dog->name);
 		return (NULL);
 	}
 	_strcpy(dog->name, name);
